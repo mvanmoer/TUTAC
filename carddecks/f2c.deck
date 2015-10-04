@@ -1,0 +1,26 @@
+099700000000000 # start, current
+099800030000000 # finish, fixed decimal
+099900002000000 # step, fixed decimal
+100000000000005 # formula constant, int
+100100000000009 # formula constant, int
+100200003200000 # formula constant, fixed decimal
+000005010000000 # copy 5
+000106310010000 # /9
+000200800050000 # right shift 5 for fixed decimal form
+000301510030000 # store 5/9 for later use
+000405009970000 # copy current
+000501519990000 # store F
+000602519990000 # write F
+000706110020000 # subtract 32
+000806210030000 # * 5/9
+000900900050000 # left shift out of r-register
+001001519990000 # store C
+001102519990000 # write C
+001205009980000 # copy stop
+001306109970000 # subtract current
+001403100190000 # transfer on zero to memory 0019
+001505009970000 # copy current
+001606009990000 # increment current
+001701509970000 # store current
+001803000040000 # jump to memory 0004
+001900000000000 # stop
