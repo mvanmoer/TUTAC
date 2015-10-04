@@ -9,7 +9,7 @@
     order of cards doesn't matter since explicit addressing and
     instruction pointer always starts at 0000.
   - instruction pointer
-  - op codes
+  - op codes:
   <pre>
     | code | command                | abbr  |
     |------+------------------------+-------|
@@ -27,7 +27,7 @@
     |   62 | Multiply               | Mult  |
     |   63 | Divide                 | Div   |
   </pre>
-  Instructions are coded as 
+  Instructions are coded as:
   - cards take 15 digits
     - 4 digit address, 1 digit sign (0 pos, 1 neg), 10 digit integer
     - 4 digit address, 1 ignored digit, 2 digit opcode, 4 digit addresses, 4 ignored
@@ -47,7 +47,8 @@
   - execution continues until STOP condition
   
   Example programs in carddecks/ - altered syntax to allow comments.
-  Run as:
+  
+Run as, output to stdout:
   python tutac.py path_to_program.deck
   Output to stdout.
   
